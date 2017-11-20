@@ -14,33 +14,63 @@ body {
 }
 
 .link {
-  width: 100%;
   background-color: rgb(83, 255, 0);
   margin-bottom: 0;
+  width: 100%;
 
 }
 .link-list {
   list-style: none;
   padding-left: 0;
+  margin-top: 0;
 }
 
 
 .big-container {
   width: 100%;
 }
+
 .text-photo {
+  display: flex;
   background-color: yellow;
 }
 .title {
   margin-top: 0;
 }
+.photo {
+  align-self: center;
+}
 .leaf-photo {
-  width: 100px;
-  height: 100px;
+  width: 100%;
   display: none;
 }
 
 .related-content {
   background-color: gray;
+}
+
+@media all and (min-width:480px){
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .link {
+    height: 50%;
+    width: 30%;
+    margin-right: 1.5em;
+    flex-grow: 0;
+
+  }
+
+  .subtitle {
+    margin-top: 0;
+  }
+  .leaf-photo {
+    display: inline;
+  }
+
+  .big-container {
+    flex-grow: 1;
+  }
 
 }
